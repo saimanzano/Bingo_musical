@@ -6,7 +6,7 @@ usage: Generate bingo musical cards from Exportify output [-h] [-i INFILE]
                                                           [-r NROW] [-o ODIR]
                                                           [-t TITLE]
                                                           [-f FOOTNOTE]
-
+```
 options:
   -h, --help            show this help message and exit
   -i INFILE, --infile INFILE
@@ -21,5 +21,4 @@ options:
   -f FOOTNOTE, --footnote FOOTNOTE
                         Footnote for the cards (default none)
 
-
-
+```
