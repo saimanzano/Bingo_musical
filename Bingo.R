@@ -73,10 +73,15 @@ main <- function(inpath, n, ncol=3, nrow=5, odir="/", titletext = "BINGO", footn
 }
 
 
-main(inpath=argv$infile, 
-     n=argv$cards, 
-     ncol=argv$ncol, 
-     nrow=argv$nrow, 
-     odir=argv$odir, 
-     titletext=argv$title, 
-     footnotetext=argv$footnote)
+
+if (file.exists(argv$infile)) {
+  main(inpath=argv$infile, 
+       n=argv$cards, 
+       ncol=argv$ncol, 
+       nrow=argv$nrow, 
+       odir=argv$odir, 
+       titletext=argv$title, 
+       footnotetext=argv$footnote)
+} else {
+  print("ERROR: Input file not found")
+}
